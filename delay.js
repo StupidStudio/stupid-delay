@@ -46,6 +46,9 @@ function Delay(opts){
 	* Public
 	*/
 	self.add = add;
+	self.pause = pause;
+	self.destroy = destroy;
+	self.start = start;
 
 	/*
 	* Init
