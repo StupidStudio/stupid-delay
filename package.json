@@ -1,0 +1,23 @@
+{
+  "name": "stupid-delay",
+  "version": "0.0.0",
+  "description": "",
+  "main": "delay.js",
+  "dependencies": {
+    "stupid-iterator": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StupidStudio/stupid-delay.git"
+  },
+  "author": "David Adalberth Andersen <david@stupid-studio.com> (http://stupid-studio.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StupidStudio/stupid-delay/issues"
+  },
+  "homepage": "https://github.com/StupidStudio/stupid-delay#readme"
+}
