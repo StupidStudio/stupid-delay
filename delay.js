@@ -11,7 +11,7 @@ function Delay(opts){
 	*/
 
 	function init(){
-		tick.add(update);
+		start();
 	}
 
 	function update(){
@@ -28,6 +28,18 @@ function Delay(opts){
 	function add(_time, _callback){
 		var delayObject = {time: parseInt(_time) + Date.now(), callback: _callback};
 		Iterator.add(delayObject, collection);
+	}
+
+	function pause(){
+		tick.remove(update);
+	}
+
+	function start(){
+		tick.add(update);
+	}
+
+	function destroy(){
+		collection = [];
 	}
 
 	/*
