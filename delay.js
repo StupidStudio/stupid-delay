@@ -26,7 +26,7 @@ function Delay(opts){
 	}
 
 	function add(_time, _callback){
-		var delayObject = {time: _time + Date.now(), callback: _callback};
+		var delayObject = {time: parseInt(_time) + Date.now(), callback: _callback};
 		Iterator.add(delayObject, collection);
 	}
 
