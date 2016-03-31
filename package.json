@@ -1,6 +1,6 @@
 {
   "name": "stupid-delay",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "delay.js",
   "dependencies": {
