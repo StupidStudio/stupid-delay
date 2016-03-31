@@ -19,7 +19,7 @@ function Delay(opts){
 		for (var i = 0; i < collection.length; i++) {
 			var delayObject = collection[i];
 			if(delayObject.time <= now){
-				if(collection.length === 1) stop();
+				if(collection.length === 1) pause();
 				delayObject.callback();
 				Iterator.remove(delayObject, collection);
 			}
@@ -32,7 +32,7 @@ function Delay(opts){
 		Iterator.add(delayObject, collection);
 	}
 
-	function stop(){
+	function pause(){
 		tick.remove(update);
 	}
 
@@ -46,7 +46,7 @@ function Delay(opts){
 	}
 
 	function destroy(){
-		stop();
+		pause();
 		collection = [];
 	}
 
@@ -56,7 +56,7 @@ function Delay(opts){
 	self.add = add;
 	self.destroy = destroy;
 	self.start = start;
-	self.stop = stop;
+	self.pause = pause;
 
 	/*
 	* Init

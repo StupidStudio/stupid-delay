@@ -22,7 +22,7 @@ delay.add(1000, function(){
 		console.log("D", Date.now() - time);
 		time = Date.now();
 		console.log("stop");
-		delay.stop();
+		delay.pause();
 		setTimeout(function(){
 			console.log("start");
 			delay.start();

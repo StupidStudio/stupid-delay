@@ -68,7 +68,7 @@ test('Can stop and start', function(t){
 		var now = Date.now() - time;
 		if(now > 100){
 			t.pass();
-			delay.stop();
+			delay.pause();
 			setTimeout(function(){
 				delay.start();
 			}, 500);
